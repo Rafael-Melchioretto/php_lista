@@ -1,7 +1,7 @@
 <?php
 
 function mascararCpf($cpf) {
-    // Tira pontos e traços, deixando só os números
+   
     $cpf = preg_replace('/[^0-9]/', '', $cpf);
  
     $ultimosQuatro = substr($cpf, -4);
